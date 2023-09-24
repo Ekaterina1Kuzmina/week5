@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <style>
+        * {
+
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(208, 167, 241);
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(229, 210, 244);
+            border: 10px solid violet;
+            border-image: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
+            border-image-slice: 1;
+            height: 10vh;
+            font-size: 18pt;
+            font-weight: bolder;
+        }
+
+        .fruits {
+            display: flex;
+            flex-direction: wrap;
+            justify-content: space-between;
+            margin: 30px;
+            height: 50px;
+
+        }
+
+        .magic1,
+        .magic2,
+        .magic3,
+        .magic4,
+        .magic5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            border-radius: 50%;
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition: transform .8s ease-in-out;
+        }
+
+        .magic1:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .magic2:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .magic3:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .magic4:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .magic5:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .button {
+            border: 2px solid red;
+            width: calc(100%/10);
+            margin: 58px;
+            padding: 3px;
+            border: 4px solid violet;
+            border-image: linear-gradient(145deg, #ee82ee, slateblue, #ffd86a, purple);
+            border-image-slice: 1;
+            background-color: rgb(229, 210, 244);
+            font-family: 'Epilogue', sans-serif;
+            font-weight: bold;
+            min-height: 5px;
+            min-width: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(254, 251, 255);
+        }
+
+        .choose {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">Фрукты для смузи</header>
+    <div class="fruits">
+        <div class="magic1"><img src="assets/grape.png" alt="img" width="100px" height="100px">
+        </div>
+        <div class="magic2"><img src="assets/kiwi.png" alt="img" width="120px" height="100px">
+        </div>
+
+        <div class="magic3"><img src="assets/banana.png" alt="img" width="120px" height="100px">
+        </div>
+        <div class="magic4"><img src="assets/abricot.png" alt="img" width="120px" height="100px">
+        </div>
+
+        <div class="magic5"><img src="assets/coconut.png" alt="img" width="120px" height="100px">
+        </div>
+
+    </div>
+    <div class="choose">
+        <button class="button">Выбрать</button>
+        <button class="button">Выбрать</button>
+        <button class="button">Выбрать</button>
+        <button class="button">Выбрать</button>
+        <button class="button">Выбрать</button>
+    </div>
+</body>
+
+</html>
